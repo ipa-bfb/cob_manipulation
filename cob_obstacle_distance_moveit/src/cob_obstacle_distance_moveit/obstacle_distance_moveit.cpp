@@ -350,10 +350,10 @@ ObstacleDistanceMoveit::ObstacleDistanceMoveit()
     double update_frequency = 50.0; //Hz
 
     std::string robot_description = "/robot_description";
-    std::string distance_service = "/calculate_distance";
-    std::string register_service = "/register_links";
-    std::string unregister_service = "/unregister_links";
-    std::string distance_topic = "/obstacle_distances";
+    std::string distance_service = "calculate_distance";
+    std::string register_service = "register_links";
+    std::string unregister_service = "unregister_links";
+    std::string distance_topic = "obstacle_distances";
 
     //Initialize planning scene monitor
     boost::shared_ptr<tf::TransformListener> tf_listener_(new tf::TransformListener(ros::Duration(2.0)));

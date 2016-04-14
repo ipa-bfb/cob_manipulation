@@ -19,7 +19,7 @@ def setup_environment():
 	#smi_.clear_objects("arm_left_7_link")
 
 	### Add a floor
-	#smi_.add_ground()
+	smi_.add_ground()
 
 	### Add table
 	pose = PoseStamped()

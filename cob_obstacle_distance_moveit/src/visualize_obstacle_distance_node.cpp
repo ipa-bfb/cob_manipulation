@@ -43,8 +43,7 @@ public:
     int init()
     {
         marker_pub_ = this->nh_.advertise<visualization_msgs::MarkerArray>("obstacle_distance/distance_markers", 1, true);
-        //before was subscribed obstacle_distances
-        obstacle_distances_sub_ = this->nh_.subscribe("obstacle_distance", 1, &DebugObstacleDistance::obstacleDistancesCallback, this);
+        obstacle_distances_sub_ = this->nh_.subscribe("obstacle_distances", 1, &DebugObstacleDistance::obstacleDistancesCallback, this);
 
         ros::Duration(1.0).sleep();
         ROS_WARN("Debug initialized.");
