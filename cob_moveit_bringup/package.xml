@@ -16,6 +16,7 @@
   <exec_depend>cob_moveit_config</exec_depend>
   <exec_depend>industrial_collision_detection</exec_depend>
   <exec_depend>joint_state_publisher</exec_depend>
+  <exec_depend>moveit_planners_chomp</exec_depend>
   <exec_depend>moveit_planners_ompl</exec_depend>
   <exec_depend>moveit_plugins</exec_depend>
   <exec_depend>moveit_ros_move_group</exec_depend>
